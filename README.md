@@ -6,4 +6,4 @@
 2. Open a new terminal.
 3. Run command "pip install -r requirements.txt" to install the necessary libraries.
 4. Run command "python app.py".
-5. Call endpoint "localhost:5000/getRecommendations/<clientID>" where clientID ranges from 1-98.
+5. Call endpoint "localhost:5000/getRecommendations/6" where 6 is the clientID and it ranges from 1-98.
