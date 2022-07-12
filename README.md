@@ -7,3 +7,8 @@
 3. Run command "pip install -r requirements.txt" to install the necessary libraries.
 4. Run command "python app.py".
 5. Call endpoint "localhost:5000/getRecommendations/6" where 6 is the clientID and it ranges from 1-98.
+
+## How to run frontend server
+1. open terminal under "SIAAppChallenge/frontend" directory
+2. run "npm install"
+3. once done, run "nodemon start"
