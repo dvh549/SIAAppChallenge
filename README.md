@@ -6,8 +6,8 @@
 2. Open a new terminal.
 3. Run command "pip install -r requirements.txt" to install the necessary libraries.
 4. Run command "python app.py".
-5. Call endpoints:
-a. Call endpoint "localhost:5000/getRecommendations/6" to get destination recommendations (where 6 is the clientID and it ranges from 1-98).
+5. Call endpoints: <br/>
+a. Call endpoint "localhost:5000/getRecommendations/6" to get destination recommendations (where 6 is the clientID and it ranges from 1-98). <br/>
 b. Call endpoint "localhost:5000/getCustomerChurn" to get churn status of a customer (if 0 = no churn, 1 = churn).
 
 ## How to run frontend server
