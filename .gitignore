@@ -130,4 +130,3 @@ dmypy.json
 
 #front-end (node modules)
 node_modules
-package-lock
