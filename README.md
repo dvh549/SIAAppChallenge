@@ -7,7 +7,7 @@
 3. Run command "pip install -r requirements.txt" to install the necessary libraries.
 4. Run command "python app.py".
 5. Call endpoint "localhost:5000/getRecommendations/6" to get destination recommendations (where 6 is the clientID and it ranges from 1-98).
-6. Call endpoint "localhost:5000/getCustomerChurn" to get churn status of a customer.
+6. Call endpoint "localhost:5000/getCustomerChurn" to get churn status of a customer (if 0 = no churn, 1 = churn).
 
 ## How to run frontend server
 1. open terminal under "SIAAppChallenge/frontend" directory
