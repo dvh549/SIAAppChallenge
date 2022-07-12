@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 //index route
-router.get("/login", function(req, res) {
+router.get("/", function(req, res) {
     res.render("index.ejs");
 })
 
