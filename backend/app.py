@@ -3,11 +3,10 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 # from invokes import invoke_http
 import pandas as pd
-import implicit
 import scipy.sparse as sparse
 
-flight_data = pd.read_csv("../ml_models/datasets/recommender/user_flight_data.csv")
-cities = pd.read_csv("../ml_models/datasets/recommender/city_codes.csv", encoding="latin-1")
+flight_data = pd.read_csv("datasets/user_flight_data.csv")
+cities = pd.read_csv("datasets/city_codes.csv", encoding="latin-1")
 app = Flask(__name__)
 CORS(app)
 

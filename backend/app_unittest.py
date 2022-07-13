@@ -1,7 +1,5 @@
 import unittest
-import flask
 import flask_testing
-import json
 from app import app
 
 class TestMain(flask_testing.TestCase):
