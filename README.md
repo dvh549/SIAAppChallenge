@@ -7,8 +7,9 @@
 3. Run command "pip install -r requirements.txt" to install the necessary libraries.
 4. Run command "python app.py".
 5. Call endpoints: <br/>
-a. Call endpoint "localhost:5000/getRecommendations/6" to get destination recommendations (where 6 is the clientID and it ranges from 1-98). <br/>
-b. Call endpoint "localhost:5000/getCustomerChurn" to get churn status of a customer (if 0 = no churn, 1 = churn).
+a. Call endpoint "/getRecommendations/6" to get destination recommendations (where 6 is the clientID and it ranges from 1-98). <br/>
+b. Call endpoint "/getCustomerChurn" to get churn status of a customer (if 0 = no churn, 1 = churn). <br/>
+c. Call endpoint "/getAirPassengerForecast/3" to get monthly airline passengers predictions (where 3 is the number of months to forecast for).
 
 ## How to run frontend server
 1. open terminal under "SIAAppChallenge/frontend" directory
