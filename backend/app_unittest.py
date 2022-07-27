@@ -74,5 +74,25 @@ class TestApp(TestMain):
             "results": 0
         })
 
+    def test_get_air_passenger_forecast(self):
+        response = self.client.get("/getAirPassengerForecast/12")
+        self.assertEqual(response.json, {
+            "code": 200,
+            "predictions": [
+                423.80023193359375,
+                408.63861083984375,
+                462.3076477050781,
+                416.0666809082031,
+                350.91363525390625,
+                326.6575927734375,
+                360.26025390625,
+                387.0815734863281,
+                342.5498962402344,
+                316.3879699707031,
+                275.7266845703125,
+                307.06256103515625
+            ]
+        })
+
 if __name__ == "__main__":
     unittest.main()
