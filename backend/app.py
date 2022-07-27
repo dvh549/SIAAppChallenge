@@ -57,7 +57,6 @@ def get_air_passenger_forecast(periods):
         }
     )
     
-
 def create_sparse_matrix(df):
     return sparse.csr_matrix(sparse.csr_matrix((df['freq'].astype(float), (df['user_id'], df['dest_id']))))
 
