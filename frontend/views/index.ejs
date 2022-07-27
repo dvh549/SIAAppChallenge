@@ -1,7 +1,60 @@
 <%- include("partials/header") %>
-<body>
-    <div class="container d-flex justify-content-center">
-        <h1 style="font-weight: 700;">Hello</h1>
+<style>
+nav {
+    background-color: transparent !important;
+    display: flex;
+    position: relative;
+}
+</style>
+<!-- Background Image -->
+<div class="container-fluid m-0 p-0 home-bg">
+    <img src="/img/home-bg.png">
+</div>
+<!-- Booking Details -->
+<div class="container-fluid">
+    <div class="col-md-4 booking-bg">
+        <div class="booking-container d-flex flex-column">
+            <div class="booking-header d-flex justify-content-center align-items-center text-center">
+                <h1 class="text-center">Book Your Next Flight</h1>
+            </div>
+            <div class="booking-input">
+                <div class="input">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <input type="text" id="from-location" placeholder="From">
+                </div>
+                <div class="input">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <input type="text" id="to-location" placeholder="To">
+                </div>
+                <div class="input">
+                    <fieldset>
+                        <input id="return" class="radio-control" name="type" type="radio" value="return">
+                        <label for="return">Return</label>
+                        <input id="one-way" class="radio-control" name="type" type="radio" value="one-way">
+                        <label for="one-way">One Way</label>
+                    </fieldset>
+                </div>
+                <div class="duration d-flex flex-row">
+                    <div class="input">
+                        <i class="fa-solid fa-calendar"></i>
+                        <input type="text" id="from-location" placeholder="Departure Date">
+                    </div>
+                    <div class="input">
+                        <i class="fa-solid fa-calendar"></i>
+                        <input type="text" id="from-location" placeholder="Return Date">
+                    </div>
+                </div>
+                <div class="input d-flex flex-column">
+                    <label for="passengers">Passengers</label>
+                    <select id="passengers" name="passengers">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <input type="button" value="Confirm">
+            </div>
+        </div>
     </div>
-</body>
+</div>
+
 <%- include("partials/footer") %>

@@ -7,6 +7,8 @@ var io = require('socket.io')(server);
 //routes
 app.use(defaultRoute);
 
+app.use(express.static("public"));
+
 server.listen(3000, "localhost", function() { 
 	console.log('Server Has Started!'); 
 });
