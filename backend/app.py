@@ -7,9 +7,6 @@ import scipy.sparse as sparse
 import numpy as np
 from tensorflow.keras.models import load_model
 
-flight_data = pd.read_csv("datasets/user_flight_data.csv")
-cities = pd.read_csv("datasets/city_codes.csv", encoding="latin-1")
-passengers = pd.read_csv("datasets/AirPassengers.csv")
 app = Flask(__name__)
 CORS(app)
 
@@ -102,4 +99,7 @@ def get_and_process_args():
     return return_df
 
 if __name__ == "__main__":
+    flight_data = pd.read_csv("datasets/user_flight_data.csv")
+    cities = pd.read_csv("datasets/city_codes.csv", encoding="latin-1")
+    passengers = pd.read_csv("datasets/AirPassengers.csv")
     app.run(host="0.0.0.0", port=5000, debug=True)
