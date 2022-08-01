@@ -17,6 +17,6 @@ c. Call endpoint "/getAirPassengerForecast/3" to get monthly airline passengers 
 3. Once done, run "nodemon start".
 
 ## Running both the frontend and backend servers (Docker Compose)
-1. [Get & Install Docker] (https://docs.docker.com/get-docker/)
+1. [Get & Install Docker](https://docs.docker.com/get-docker/)
 2. Run command "docker-compose up -d" to start and run servers.
 3. Run command "docker-compose down" to stop and remove servers.
