@@ -12,6 +12,11 @@ b. Call endpoint "/getCustomerChurn" to get churn status of a customer (if 0 = n
 c. Call endpoint "/getAirPassengerForecast/3" to get monthly airline passengers predictions (where 3 is the number of months to forecast for).
 
 ## How to run frontend server
-1. open terminal under "SIAAppChallenge/frontend" directory
-2. run "npm install"
-3. once done, run "nodemon start"
+1. Open terminal under "SIAAppChallenge/frontend" directory.
+2. Run "npm install".
+3. Once done, run "nodemon start".
+
+## Running both the frontend and backend servers (Docker Compose)
+1. [Get & Install Docker] (https://docs.docker.com/get-docker/)
+2. Run command "docker-compose up -d" to start and run servers.
+3. Run command "docker-compose down" to stop and remove servers.
