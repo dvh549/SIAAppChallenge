@@ -1,4 +1,5 @@
 <%- include("partials/header") %>
+
 <style>
 nav {
     background-color: transparent !important;
@@ -12,8 +13,8 @@ nav {
 </div>
 <!-- Booking Details -->
 <div class="container-fluid">
-    <div class="col-md-4 booking-bg">
-        <div class="booking-container d-flex flex-column">
+    <div class="col-md-4 booking-bg" >
+        <div class="booking-container d-flex flex-column shadow" style="background-color: #fff; border-radius: 15px;">
             <div class="booking-header d-flex justify-content-center align-items-center text-center">
                 <h1 class="text-center">Book Your Next Flight</h1>
             </div>
@@ -26,35 +27,189 @@ nav {
                     <i class="fa-solid fa-map-pin"></i>
                     <input type="text" id="to-location" placeholder="To">
                 </div>
-                <div class="input">
+                <div class="input-radio">
                     <fieldset>
-                        <input id="return" class="radio-control" name="type" type="radio" value="return">
-                        <label for="return">Return</label>
+                        <input id="return" class="radio-control" name="type" type="radio" value="return" checked>
+                        <label for="return">RETURN</label>
                         <input id="one-way" class="radio-control" name="type" type="radio" value="one-way">
-                        <label for="one-way">One Way</label>
+                        <label for="one-way">ONE-WAY</label>
                     </fieldset>
                 </div>
-                <div class="duration d-flex flex-row">
+                <div class="travel-duration">
                     <div class="input">
                         <i class="fa-solid fa-calendar"></i>
                         <input type="text" id="from-location" placeholder="Departure Date">
                     </div>
+                    <p class="m-0" style="padding-left: 20px; padding-right: 20px; color: rgb(143,143,143); font-weight: 500">To</p>
                     <div class="input">
                         <i class="fa-solid fa-calendar"></i>
                         <input type="text" id="from-location" placeholder="Return Date">
                     </div>
                 </div>
-                <div class="input d-flex flex-column">
-                    <label for="passengers">Passengers</label>
-                    <select id="passengers" name="passengers">
-                        <option value="1" selected>1</option>
-                        <option value="2">2</option>
-                    </select>
+                <div class="d-flex flex-column" style="margin: 15px 0 15px 0">
+                    <label for="passengers" style="font-weight: 700; color: rgb(143,143,143); margin: 0">Passengers</label>
+                    <div class="input-select">
+                        <i class="fa-solid fa-user-group"></i>
+                        <select id="passengers" name="passengers">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
                 </div>
-                <input type="button" value="Confirm">
+                <input type="button" value="Confirm" class="confirm-booking">
             </div>
         </div>
     </div>
 </div>
 
+<div class="container-fluid section" style="margin-top: 800px; background-color: rgb(255,233,0);">
+    <div class="container ">
+        <div class="section-header">
+            <h2>Trending Destinations</h2>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="trending-row col-12 p-0">
+        <div class="trending col-4 p-0">
+            <img class="img-fluid" src="/img/new_york.png">
+            <div class="bottom-left">
+                <span>New York</span><br>
+                <span>from <b>SGD 1,599</b></span>
+            </div>
+        </div>
+        <div class="trending col-4 p-0">
+            <img class="img-fluid" src="/img/hawaii.png">
+            <div class="bottom-left">
+                <span>Hawaii</span><br>
+                <span>from <b>SGD 1,199</b></span>
+            </div>
+        </div>
+        <div class="trending col-4 p-0">
+            <img class="img-fluid" src="/img/london.png">
+            <div class="bottom-left">
+                <span>London</span><br>
+                <span>from <b>SGD 1,299</b></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Recommended For You</h2>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img class="img-fluid" src="/img/shang_hai.png">
+            <div class="bottom-left">
+                <span>Shang Hai</span><br>
+                <span>from <b>SGD 199</b></span>
+            </div>
+        </div>
+        <div class="item">
+            <img class="img-fluid" src="/img/sydney.png">
+            <div class="bottom-left">
+                <span>Sydney</span><br>
+                <span>from <b>SGD 899</b></span>
+            </div>
+        </div>
+        <div class="item">
+            <img class="img-fluid" src="/img/los_angeles.png">
+            <div class="bottom-left">
+                <span>Los Angeles</span><br>
+                <span>from <b>SGD 1,299</b></span>
+            </div>
+        </div>
+        <div class="item">
+            <img class="img-fluid" src="/img/new_delhi.png">
+            <div class="bottom-left">
+                <span>New Delhi</span><br>
+                <span>from <b>SGD 399</b></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Exclusively For You</h2>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img class="img-fluid" src="/img/bangkok.png">
+            <div class="bottom-left">
+                <span>Bangkok</span><br>
+                <span>from <b>SGD 119</b></span>
+            </div>
+        </div>
+        <div class="item">
+            <img class="img-fluid" src="/img/manila.png">
+            <div class="bottom-left">
+                <span>Manila</span><br>
+                <span>from <b>SGD 169</b></span>
+            </div>
+        </div>
+        <div class="item">
+            <img class="img-fluid" src="/img/kuala_lumpur.png">
+            <div class="bottom-left">
+                <span>Kuala Lumpur</span><br>
+                <span>from <b>SGD 59</b></span>
+            </div>
+        </div>
+        <div class="item">
+            <img class="img-fluid" src="/img/kyoto.png">
+            <div class="bottom-left">
+                <span>Kyoto</span><br>
+                <span>from <b>SGD 599</b></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid section" style="background-color: rgb(255,233,0); padding-bottom: 150px;">
+    <div class="container">
+        <div class="section-header">
+            <h2>Destinations For</h2>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="categories-row">
+            <div class="categories">
+                <span class="categories-text">Family & Friends</span>
+            </div>
+            <div class="categories">
+                <span class="categories-text">Couples</span>
+            </div>
+            <div class="categories">
+                <span class="categories-text">Individual</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 15,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
+</script>
 <%- include("partials/footer") %>
